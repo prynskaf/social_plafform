@@ -18,7 +18,11 @@ import User from "./models/User.js";
 import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 
+<<<<<<< HEAD
 /* CONFIGURATIONS */
+=======
+//Configuration
+>>>>>>> a27b5e359e72e365009be7d1e233e9a6868ae7fa
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
@@ -49,7 +53,11 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 
 /* ROUTES */
 app.use("/auth", authRoutes);
+<<<<<<< HEAD
 app.use("/users", userRoutes);
+=======
+app.use("/users", UserRoutes);
+>>>>>>> a27b5e359e72e365009be7d1e233e9a6868ae7fa
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
